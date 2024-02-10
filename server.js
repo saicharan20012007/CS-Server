@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 
 const corsOptions = {
-  origin: [process.env.FRONTEND_URL, process.env.ADMIN_URL],
+    origin: [process.env.FRONTEND_URL, "https://cs-client-eight.vercel.app", process.env.ADMIN_URL],
   optionSuccessStatus: 200,
   credentials: true,
 };
